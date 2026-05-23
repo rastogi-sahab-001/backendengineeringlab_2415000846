@@ -21,7 +21,7 @@ app.use(session({
 // Home Route
 app.get('/', (req, res) => {
     if (!req.session.user && req.cookies.user) {
-        return res.send(`Welcome back! Last time you logged in as ${req.cookies.user}`);
+        return res.send(`Welcome back!! Last time you logged in as ${req.cookies.user}`);
     }
     res.send("Welcome to Online Course Platform");
 });
